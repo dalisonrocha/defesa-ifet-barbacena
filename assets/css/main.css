@@ -3147,6 +3147,7 @@
 				margin: 0 0 1.5em 0;
 				width: 600px;
 				height: 200px;
+				max-width:100%;
 			}
 
 				#header.alt .logo img {
