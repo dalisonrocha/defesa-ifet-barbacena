@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+    <head> 
+        <meta charset="utf-8">
+        <title>Contato</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicons -->
+        <link href="img/favicon.png" rel="icon">
+        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Libraries CSS Files -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+        <!-- Meus CSS -->
+        <link rel="stylesheet" href="css/geral.css">
+        <link href="css/contato.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!--==========================
+            Header
+        ============================-->
+        <header id="cabeça">
+          <div >
+
+            <div id="logo">
+              <a href="index.html"><img src="img/Logo com Delivery.png" alt=""></a>
+            </div>
+      
+            <nav id="nav-menu-container">
+              <ul class="nav-menu">
+                <li><a href="cadastre-sua-empresa.html">Cadastre sua empresa</a></li>
+                <li><a href="quero-ser-entregador.html">Seja Entregador</a></li>
+                <li><a href="quero-ser-licenciado.html">Seja Franqueado</a></li>
+                <li><a href="aplicativo-exclusivo.html">APP Exclusivo</a></li>
+                <li><a href="quero-um-chatbot.html">ChatBot</a></li>
+                <li><a href="entrar-em-contato.html">Contato</a></li>
+              </ul>
+      
+      
+              <div class="nav-menu-mob">
+                <button type="button"  id="mobile-nav-toggle">
+                  <i class="fa fa-bars"></i>
+                </button>
+      
+      
+                <ul class="nav-menu-list-mob ">
+                  <a href="index.html"><img src="img/Logo com Delivery.png" alt=""></a>
+                  <li><a href="cadastre-sua-empresa.html">Cadastre sua empresa</a></li>
+                  <li><a href="quero-ser-entregador.html">Seja Entregador</a></li>
+                  <li><a href="quero-ser-licenciado.html">Seja Franqueado</a></li>
+                  <li><a href="aplicativo-exclusivo.html">APP Exclusivo</a></li>
+                  <li><a href="quero-um-chatbot.html">ChatBot</a></li>
+                  <li><a href="entrar-em-contato.html">Contato</a></li>
+                </ul>
+              </div>
+        
+      
+            </nav><!-- #nav-menu-container -->
+          </div>
+        </header><!-- #header -->
+        <div class="cor">
+        <section class="introd">
+            <h1>Entre em contato e tire suas dúvidas</h1>
+        </section>
+        <section class="formulario">
+            <form action="" method="POST">
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault01">Primeiro nome</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault02">Sobrenome</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Sobrenome"  required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault03">Cidade</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" required>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationDefault04">CEP</label>
+                    <input type="text" class="form-control" id="validationDefault04" placeholder="CEP" required>
+                  </div>
+                  <div class="col-md-2 mb-3">
+                    <label for="validationDefault05">Estado</label>
+                    <input type="text" class="form-control" id="validationDefault05" placeholder="Estado" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault06">E-mail</label>
+                    <input type="text" class="form-control" id="validationDefault06" placeholder="E-mail"  required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault07">Telefone</label>
+                    <input type="text" class="form-control" id="validationDefault07" placeholder="Telefone"  required>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <h6>Escolha um assunto</h6>
+                  <select name="assunto" id="assunto">
+                    <option value="Aplicativo Exclusivo">Aplicativo Exclusivo</option>
+                    <option value="Ser um Entregador">Ser um Entregador</option>
+                    <option value="Ser um Franqueado">Ser um Franqueado</option>
+                    <option value="ChatBot">ChatBot</option>
+                    <option value="Cadastrar Empresa">Cadastrar Empresa</option>
+                  </select>
+                </div>
+                <button onclick="EnviaForm()" class="btn btn-primary" type="button">Enviar</button>
+              </form>
+              <div class="buton">
+                <h4>Ou</h4>
+                <a class="btn btn-light" href="https://wa.me/5532988653631?text=Oi%20vi%20seu%20site%20Memostra%20e%20queria%20saber%20mais"><img src="img/wpp.png" alt=""></a>
+              </div>
+        </section>
+        </div>
+      
+        <script>
+
+          function EnviaForm(){  
+            
+
+          const nome = document.getElementById('validationDefault01').value;
+          const sobrenome = document.getElementById('validationDefault02').value;
+          const cidade = document.getElementById('validationDefault03').value;
+          const estado = document.getElementById('validationDefault05').value;
+          const email = document.getElementById('validationDefault06').value;
+          const telefone = document.getElementById('validationDefault07').value;
+          const cep = document.getElementById('validationDefault04').value;
+          const select = document.getElementById('assunto');
+
+          const assuntoform = select.options[select.selectedIndex].value;
+          const destinatario ="djxdmata#gmail.com";
+          const corpoEmail = nome+" "+sobrenome+" "+cidade+" "+estado+" "+cep+" "+telefone+" "+email;
+          const dados = {
+            destinatario: destinatario,
+            assunto: assuntoform,
+            corpoEmail: corpoEmail
+          }
+
+
+          fetch("https://mmapidevelopercore1.azurewebsites.net/api/v1/Email", {
+              method: 'POST',
+              headers: {
+              'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(dados),
+          })
+          .then((response) => response.json())
+          .then((data) => {
+            //deu certo
+            alert('Enviado Com Sucesso!!');
+        
+            console.log('Success:', data);
+          })
+          .catch((error) => {
+            //deu errado
+            alert('Falha ao Enviar')
+              console.error('Error:', error);
+          });
+          
+        };
+        
+        </script>
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/jquery/jquery-migrate.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/superfish/hoverIntent.js"></script>
+        <script src="lib/superfish/superfish.min.js"></script>
+        <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+      
+      
+      
+        <!-- Template Main Javascript File -->
+        <script src="js/menu.js"></script>
+        <script src="js/efect.js"></script>
+    </body>
+</html>
